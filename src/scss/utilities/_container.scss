@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+// KP's approach
+.container {
+  --max-width: #{$container-max-width};
+  --padding: #{size(16)};
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+.container[data-type="wide"] {
+  --max-width: #{$container-max-width-wide};
+}
+
+// nicer approach / mixin / foreach
+
+// .container {
+//   width: min($container-max-width, 100% - ( size(16) * 2) );
+//   margin-inline: auto;
+// }
+
+// .container[data-type="wide"] {
+//   width: min($container-wide-max-width, 100% - ( size(16) * 2) );
+//   margin-inline: auto;
+// }
