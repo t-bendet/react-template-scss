@@ -20,4 +20,33 @@ $font-sizes: (
 );
 
 $fw-400: 400;
+$fw-500: 500;
 $fw-700: 700;
+
+.ls-900 {
+  letter-spacing: 10px;
+}
+
+.ls-600 {
+  letter-spacing: 2px;
+}
+
+.ls-400 {
+  letter-spacing: 1.42px;
+}
+
+.ls-300 {
+  letter-spacing: 1.28px;
+}
+
+.ls-200 {
+  letter-spacing: 1px;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+.opacity-medium {
+  opacity: 0.75;
+}
